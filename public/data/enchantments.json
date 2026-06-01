@@ -1,0 +1,112 @@
+[
+  {
+    "id": "deadly",
+    "name": "Deadly",
+    "effect": "+50% Crit Chance",
+    "color": "#fcd34d",
+    "category": "offensive",
+    "bestOn": ["Damage items with multiple targets", "Items that already have high base damage", "Multicast items"],
+    "tier": "A",
+    "notes": "Crit doubles ALL effects simultaneously — damage, burn, poison, shield, heal. Exceptional on items with secondary effects."
+  },
+  {
+    "id": "fiery",
+    "name": "Fiery",
+    "effect": "Applies Burn equal to 10% of the item's damage",
+    "color": "#ef4444",
+    "category": "offensive",
+    "bestOn": ["High-damage weapons", "Fast-activating items", "Items with Multicast"],
+    "tier": "A",
+    "notes": "The Burn amount scales with item damage — enchant your highest-damage item for maximum Burn value. Pairs perfectly with Burn-scaling items (Calcinator, Grill)."
+  },
+  {
+    "id": "heavy",
+    "name": "Heavy",
+    "effect": "Slow 2 items for 1 second",
+    "color": "#6b7280",
+    "category": "control",
+    "bestOn": ["Fast-activating items (low cooldown)", "Board-wide or multi-hit items"],
+    "tier": "B+",
+    "notes": "More valuable when placed on low-CD items that activate frequently. Slowing opponent's Core or engine item can break their combo timing."
+  },
+  {
+    "id": "icy",
+    "name": "Icy",
+    "effect": "Freeze 1 item for 1 second",
+    "color": "#93c5fd",
+    "category": "control",
+    "bestOn": ["Items that activate frequently", "Items against Dooley (freezes Core chain)"],
+    "tier": "A",
+    "notes": "Exceptional against Dooley — freezing his Core breaks the entire trigger chain. Against any hero, freezing their highest-value item is a significant tempo swing."
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "effect": "Double damage",
+    "color": "#374151",
+    "category": "offensive",
+    "bestOn": ["Highest-damage items", "Scaling items", "Mak's poison/damage items"],
+    "tier": "S",
+    "notes": "The most straightforward and powerful damage enchantment. Doubles the base damage before scaling calculations. Mak's best enchantment by far — transforms slow poison items into major threats."
+  },
+  {
+    "id": "radiant",
+    "name": "Radiant",
+    "effect": "Cannot be Frozen, Slowed, or Destroyed",
+    "color": "#fef3c7",
+    "category": "defensive",
+    "bestOn": ["Core items (especially Dooley's Core)", "Key engine items", "Items targeted by Freeze-heavy boards"],
+    "tier": "A+",
+    "notes": "Complete immunity to all control effects. Essential on Dooley's Core since Freeze is his primary counter. Also protects Mak's key weapons and Stelle's flying items."
+  },
+  {
+    "id": "restorative",
+    "name": "Restorative",
+    "effect": "Applies Heal on activation",
+    "color": "#34d399",
+    "category": "defensive",
+    "bestOn": ["Fast-activating items", "Mak weapon builds", "Any hero needing sustain without a dedicated healer"],
+    "tier": "B+",
+    "notes": "Heal removes 1 Poison AND 1 Burn per trigger — not just HP recovery. On a fast weapon, this continuously clears DoT effects. Mak's best defensive option since he lacks natural shield items."
+  },
+  {
+    "id": "shielded",
+    "name": "Shielded",
+    "effect": "Applies Shield on activation",
+    "color": "#6366f1",
+    "category": "defensive",
+    "bestOn": ["Items that activate very frequently", "Pyg builds (more shield = more Durian-proof)", "Dooley's Armored Core synergy"],
+    "tier": "B+",
+    "notes": "The amount of Shield applied scales with item quality. Pairs powerfully with Pyg's Shield-to-damage builds. Note: Durian (Jules) converts your shield into damage against you."
+  },
+  {
+    "id": "shiny",
+    "name": "Shiny",
+    "effect": "+1 Multicast",
+    "color": "#f59e0b",
+    "category": "offensive",
+    "bestOn": ["Any item with trigger-on-use effects", "Dooley's Core (doubles chain triggers)", "Poison/Burn items for doubled DoT application"],
+    "tier": "A+",
+    "notes": "Each Multicast activation counts as a SEPARATE item use — procs all 'when you use this item' triggers again. Exponential value on items with secondary effects. One of the highest-ceiling enchantments."
+  },
+  {
+    "id": "toxic",
+    "name": "Toxic",
+    "effect": "Applies Poison equal to 10% of the item's damage",
+    "color": "#84cc16",
+    "category": "offensive",
+    "bestOn": ["High-damage weapons", "Items vs. Shield-stacking boards", "Mak poison builds"],
+    "tier": "A",
+    "notes": "Poison bypasses Shield entirely — exceptional against Pyg or any shield-heavy board. The Poison amount scales with item damage. Pairs with Retort (Mak) which gains permanent +Poison per reagent transformed."
+  },
+  {
+    "id": "turbo",
+    "name": "Turbo",
+    "effect": "Haste 2 items for 2 seconds",
+    "color": "#fbbf24",
+    "category": "speed",
+    "bestOn": ["Engine items in cycling builds", "Items adjacent to key damage items", "Stelle's haste-trigger builds"],
+    "tier": "A",
+    "notes": "Procs Stelle's Stellear Swallowtail and Pill Buggy haste-triggers. On a fast item, Turbo can generate near-permanent Haste on adjacent items. Exceptional in Dooley builds to accelerate the entire chain."
+  }
+]

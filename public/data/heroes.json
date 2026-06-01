@@ -1,0 +1,227 @@
+[
+  {
+    "id": "vanessa",
+    "name": "Vanessa",
+    "role": "Aggressor",
+    "difficulty": "Beginner",
+    "dlc": false,
+    "price": 0,
+    "color": "#3b82f6",
+    "tagline": "Pirate. Weapons. Relentless early pressure.",
+    "archetype": ["Weapons", "Aquatic", "Ammunition"],
+    "primaryDamage": ["Physical", "Poison"],
+    "earlyGame": "Strong",
+    "lateGame": "Above Average",
+    "economyDependence": "Low",
+    "uniqueMechanic": "Ammo system — weapons require ammunition that depletes mid-fight and fully refills after each battle. Aquatic items form a distinct poison/haste loop.",
+    "playstyle": "The most beginner-friendly hero. Vanessa excels at early aggression with weapons and can pivot into an Aquatic poison loop for late-game scaling. Once you commit to Weapons or Aquatic, pivoting mid-run is extremely difficult.",
+    "topBuilds": [
+      { "name": "Aquatic / Poison", "tier": "A", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Pufferfish", "Tortuga", "Scimitar of the Deep"] },
+      { "name": "Flagship", "tier": "A", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Flagship", "Tortuga"] },
+      { "name": "Mono-Weapon Sniper", "tier": "B+", "earlyGame": "Good", "lateGame": "Average", "coreItems": ["Sniper Rifle", "Silencer", "Spyglass"] },
+      { "name": "Multi-Weapon Gunslinger", "tier": "B", "earlyGame": "Great", "lateGame": "Average", "coreItems": ["Sharkclaws", "Katana", "Arbalest"] }
+    ],
+    "tips": [
+      "Buy ammo-free items early to maintain pressure before Day 3.",
+      "Pufferfish is your best friend — it poisons every fight passively.",
+      "Tortuga gives 1-second Haste to ALL items — pairs with any board.",
+      "Flagship was buffed to 5s CD in Season 14; it's viable again."
+    ],
+    "counters": ["Freeze-heavy boards lock your weapons mid-charge", "High shield boards can weather your early burst"],
+    "strongAgainst": ["Low-health, fast-dying boards", "Boards with few defensive items early"],
+    "lore": "Pirate from the island nation of Pelagos, gathering resources to fight a tyrant who seized her homeland."
+  },
+  {
+    "id": "pygmalien",
+    "name": "Pygmalien",
+    "role": "Tank / Economy",
+    "difficulty": "Intermediate",
+    "dlc": false,
+    "price": 0,
+    "color": "#f59e0b",
+    "tagline": "The Immovable Object. Outlast everyone.",
+    "archetype": ["Economy", "Max Health", "Shield", "Properties"],
+    "primaryDamage": ["Physical", "Item Value Scaling"],
+    "earlyGame": "Weak",
+    "lateGame": "Fantastic",
+    "economyDependence": "High",
+    "uniqueMechanic": "Economy items generate gold and interest. Buy/Sell triggers fire on merchant interactions. Max Health stacking via Lemonade Stand. Skyscraper deals damage equal to 3× your total item value.",
+    "playstyle": "Pyg is the ultimate late-game tank. Sacrifice early wins to accumulate gold and scale Max Health and item value. By Day 8+, Skyscraper deals thousands of damage and your health pool is unkillable.",
+    "topBuilds": [
+      { "name": "Jabalian Drum", "tier": "A+", "earlyGame": "Below Average", "lateGame": "Great", "coreItems": ["Jabalian Drum", "ATM", "Rewards Card"] },
+      { "name": "Fixer Upper", "tier": "A", "earlyGame": "Below Average", "lateGame": "Fantastic", "coreItems": ["ATM", "Money Tree", "Lemonade Stand"] },
+      { "name": "Freeze Build", "tier": "A", "earlyGame": "Poor", "lateGame": "Great", "coreItems": ["Coincure", "Double Whammy"] },
+      { "name": "Fit Pyg", "tier": "A", "earlyGame": "Below Average", "lateGame": "Good", "coreItems": ["Pyg's Gym", "Matchbox", "Bushel"] }
+    ],
+    "tips": [
+      "Always buy ATM on Day 1 if offered — economy compounds every fight.",
+      "Lemonade Stand: sell small items constantly to stack Max Health.",
+      "Skyscraper's damage = 3× all your items' value. Make every slot count.",
+      "You can afford to lose early days; Prestige loss = day number, so early losses are cheap."
+    ],
+    "counters": ["Poison bypasses your shield entirely", "Fast aggressive boards kill you before scaling kicks in"],
+    "strongAgainst": ["Any late-game fight you survive to", "Boards that can't burst you down quickly"],
+    "lore": "Boar businessman and merchant. His economy-focused personality perfectly matches his gameplay — hoard gold, convert wealth to power."
+  },
+  {
+    "id": "dooley",
+    "name": "Dooley",
+    "role": "Combo Engine",
+    "difficulty": "Advanced",
+    "dlc": false,
+    "price": 0,
+    "color": "#06b6d4",
+    "tagline": "Chain reactions. Left-to-right chaos.",
+    "archetype": ["Core Mechanics", "Tech", "Friends", "Chain Triggers"],
+    "primaryDamage": ["Physical", "Burn", "Shield"],
+    "earlyGame": "Below Average",
+    "lateGame": "Above Average",
+    "economyDependence": "Medium",
+    "uniqueMechanic": "THE CORE SYSTEM: At Level 3, choose 1 of 7 Cores. Cores activate from items to the left and buff items to the right. Careful left-to-right positioning is everything. Freeze hard-counters Dooley by breaking the chain.",
+    "playstyle": "Build left-to-right chains. Items on the left charge the Core; the Core amplifies items on the right. The chain can create overwhelming cascades. Dooley struggles before getting his Core at Level 3 and is vulnerable to Freeze.",
+    "topBuilds": [
+      { "name": "Dooltron (Friends)", "tier": "B+", "earlyGame": "Great", "lateGame": "Average", "coreItems": ["Companion Core", "Dooltron", "Robotic Factory"] },
+      { "name": "Weaponized Core", "tier": "B", "earlyGame": "Great", "lateGame": "Above Average", "coreItems": ["Weaponized Core", "Power Drill", "Arc Blaster"] },
+      { "name": "Bug Squad", "tier": "B+", "earlyGame": "Good", "lateGame": "Above Average", "coreItems": ["Companion Core", "Robotic Factory", "5x Bug Friends"] },
+      { "name": "Ignition Core", "tier": "B-", "earlyGame": "Good", "lateGame": "Below Average", "coreItems": ["Ignition Core", "Arc Blaster"] }
+    ],
+    "tips": [
+      "Hover items to see the blue glow — it shows which items interact with each other.",
+      "Fast left-neighbor items (low CD) charge the Core faster.",
+      "Freeze completely shuts down your chain — build Radiant enchantment on your Core if possible.",
+      "Chris Army Knife is a Friend + Tool + Tech in one small slot — extremely efficient."
+    ],
+    "counters": ["Freeze kills your chain entirely", "Boards that kill you before Day 3 when you get your Core"],
+    "strongAgainst": ["Slow defensive boards that let your chain spiral out of control"],
+    "lore": "Small robot with grand visions of robotic freedom. Background deliberately kept mysterious by the developers."
+  },
+  {
+    "id": "mak",
+    "name": "Mak",
+    "role": "Alchemist",
+    "difficulty": "Advanced",
+    "dlc": true,
+    "price": 19.99,
+    "color": "#10b981",
+    "tagline": "Brew. Poison. Scale. The best late-game in the game.",
+    "archetype": ["Potions", "Reagents", "Poison", "Burn", "Lifesteal"],
+    "primaryDamage": ["Poison", "Burn", "Physical"],
+    "earlyGame": "Below Average",
+    "lateGame": "Fantastic",
+    "economyDependence": "Medium",
+    "uniqueMechanic": "REAGENT SYSTEM: Reagents transform into enchanted Potions via Catalysts (Aludel, Mortar & Pestle). The transformed Potion retains the Reagent's rarity and enchantment. Mak is the ONLY hero who can apply enchantments mid-run via alchemy. Philosopher's Stone, Calcinator, and Retort gain permanent buffs with every reagent transformed.",
+    "playstyle": "Survives early via regeneration, then transitions to scaling damage. Commit to one damage type (poison, burn, or weapon). The Poppy Field + Spider Mace + Floor Spike combo is considered potentially the strongest build in the entire game.",
+    "topBuilds": [
+      { "name": "Poppy Field Poison", "tier": "A+", "earlyGame": "Below Average", "lateGame": "Fantastic", "coreItems": ["Poppy Field", "Spider Mace", "Floor Spike"] },
+      { "name": "Peacewrought", "tier": "A+", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Peacewrought", "Philosopher's Stone"] },
+      { "name": "Self Poison", "tier": "A", "earlyGame": "Below Average", "lateGame": "Great", "coreItems": ["Rapid Injection System", "Retort"] },
+      { "name": "Potion Distillery", "tier": "B+", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Potion Distillery", "Rainbow Potion"] }
+    ],
+    "tips": [
+      "Obsidian enchantment doubles damage — transforms slow poison items into powerhouses.",
+      "Poppy Field + Spider Mace + Floor Spike is potentially the best combo in the game.",
+      "Retort, Philosopher's Stone, and Calcinator stack PERMANENTLY each run — transform reagents constantly.",
+      "Mak has 'Mak-levels of regen' — you can survive early losses that would kill other heroes."
+    ],
+    "counters": ["High healing boards can out-regen your poison", "Shield reduces Burn damage by 50%"],
+    "strongAgainst": ["High-health boards (poison ignores shields)", "Boards that rely on healing (burn removes heal triggers)"],
+    "lore": "Master alchemist. Background details sparse, but his toolkit tells the story — a scientist who turns the world itself into poison."
+  },
+  {
+    "id": "stelle",
+    "name": "Stelle",
+    "role": "Haste / Burn",
+    "difficulty": "Intermediate",
+    "dlc": true,
+    "price": 19.99,
+    "color": "#f97316",
+    "tagline": "Fly. Burn. Cycle. Engines that spiral out of control.",
+    "archetype": ["Flying", "Vehicles", "Haste", "Burn", "Tools"],
+    "primaryDamage": ["Burn", "Physical"],
+    "earlyGame": "Average",
+    "lateGame": "Great",
+    "economyDependence": "Medium",
+    "uniqueMechanic": "FLYING SYSTEM: Flying items have Slow/Freeze durations halved. Two trigger types: 'Start Flying' (triggers when item enters flying state) and 'Stop Flying' (triggers when item ceases flying). Cycling start/stop creates chain reactions. Save 24+ gold by Day 6 to hit gold-tier payoff items.",
+    "playstyle": "Stack flying items for Skyliner, cycle start/stop triggers for payoffs, or run a pure Burn engine. Multiple viable archetypes with different play patterns. LavaRoller is the 'craziest Burn archetype in the game' with self-doubling capabilities.",
+    "topBuilds": [
+      { "name": "Skyliner Stack", "tier": "A", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Skyliner", "Hangar", "Balloon Engine"] },
+      { "name": "LavaRoller Burn", "tier": "A", "earlyGame": "Good", "lateGame": "Great", "coreItems": ["LavaRoller", "Balloon Engine", "Hydrogen Tank"] },
+      { "name": "Fly Cycling", "tier": "B+", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Stellear Swallowtail", "Freefall Simulator"] },
+      { "name": "Haste-Fly Hybrid", "tier": "B+", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Stellear Swallowtail", "Pill Buggy"] }
+    ],
+    "tips": [
+      "Skyliner gains +1 Multicast per flying item — stack flying items aggressively.",
+      "Hangar now gives +10 Damage and +10 Shield to ALL items baseline (even without flying).",
+      "Save 24+ gold by Day 6 — Stelle's gold-tier items are dramatically better than silver.",
+      "LavaRoller can double itself — it's the highest Burn ceiling in the entire game."
+    ],
+    "counters": ["Freeze halves your flying durations — still annoying even with the reduction", "Boards that kill you before your engine spins up"],
+    "strongAgainst": ["Any board that needs time to set up — your engine beats them to it"],
+    "lore": "Skilled mechanic and pilot who runs a workshop in the Tower District of the Bazaar. Builds contraptions that somehow always fly."
+  },
+  {
+    "id": "jules",
+    "name": "Jules",
+    "role": "Food / Burn / Conversion",
+    "difficulty": "Intermediate",
+    "dlc": true,
+    "price": 19.99,
+    "color": "#ec4899",
+    "tagline": "Celebrity chef. Converts sustain into devastating damage.",
+    "archetype": ["Food", "Burn", "Regen Conversion", "Shield Conversion"],
+    "primaryDamage": ["Burn", "Physical", "Converted Regen/Shield"],
+    "earlyGame": "Average",
+    "lateGame": "Great",
+    "economyDependence": "Medium",
+    "uniqueMechanic": "HEATED/CHILLED SYSTEM: Stoves and Coolers are special board slots (not items) that buff Heated/Chilled keyword items. Their positions are RNG each run, making every Jules run contextually unique. CONVERSION: Durian converts Shield into Damage. Bread Knife converts Regen into Damage — pair with max health for stacking.",
+    "playstyle": "Generate massive Regen and Shield through food items, then convert that sustain into burst damage via Durian (shield → damage) or Bread Knife (regen → damage). Can also run pure Burn with Microwave enabling board-wide food haste.",
+    "topBuilds": [
+      { "name": "Durian Shield Conversion", "tier": "A+", "earlyGame": "Good", "lateGame": "Fantastic", "coreItems": ["Durian", "Dragonmelon", "Microwave"] },
+      { "name": "Burn (Anyone Can Cook)", "tier": "A", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Microwave", "Grill", "Jumbo Wok"] },
+      { "name": "Farmer's Market Regen", "tier": "A", "earlyGame": "Good", "lateGame": "Great", "coreItems": ["Bread Knife", "Microwave", "Feast"] },
+      { "name": "Feast Build", "tier": "A", "earlyGame": "Good", "lateGame": "Great", "coreItems": ["Feast", "Microwave", "Grill"] }
+    ],
+    "tips": [
+      "Microwave is your engine — low CD, gives Haste to all food items.",
+      "Durian: the bigger your shield, the more damage it does. Stack shield items first.",
+      "Birthday Cake was buffed to 30% crit in Season 14 — it's now a serious pick.",
+      "Dragonmelon was moved to Gold tier in Season 14 — plan your economy around it."
+    ],
+    "counters": ["Poison bypasses your shield-based defenses", "Boards that disrupt your Stove/Cooler positioning"],
+    "strongAgainst": ["Boards that can't burst through your regen-stacked health", "Slow burn-resistant boards that fall to your conversion damage"],
+    "lore": "Celebrity chef from a harsh world who now runs a restaurant at the Bazaar. Every dish is a weapon."
+  },
+  {
+    "id": "karnok",
+    "name": "Karnok",
+    "role": "Tempo Aggressor",
+    "difficulty": "Advanced",
+    "dlc": true,
+    "price": 19.99,
+    "color": "#dc2626",
+    "tagline": "Rage. Enrage. Hunt. The newest and most feared.",
+    "archetype": ["Rage", "Enrage Triggers", "Weapons", "Beast Transformation", "Masks"],
+    "primaryDamage": ["Physical", "Max HP Scaling"],
+    "earlyGame": "Great",
+    "lateGame": "Good",
+    "economyDependence": "Medium",
+    "uniqueMechanic": "RAGE SYSTEM: Small items generate +4 Rage, Medium +8, Large +12. At 100 Rage, Karnok Enrages — entering an empowered state. Nearly all his bronze skills trigger off Enrage. Masks (Wolf, Bear, Boar) provide direct rage. SECRET: Sled + any mask in stash = instant 100 rage, even without the mask on board.",
+    "playstyle": "Tempo hero — requires early aggression. Lacks broken late-game builds, so successful runs typically finish before Day 13. Maintain gold reserves to pivot when better items appear. Hunting Knife + Hunter's Journal are mandatory early pickups.",
+    "topBuilds": [
+      { "name": "Jacket Exodia", "tier": "S", "earlyGame": "Good", "lateGame": "Fantastic", "coreItems": ["Leather Jacket", "Runic Claymore", "Hunting Knife"] },
+      { "name": "Runic Claymore", "tier": "S", "earlyGame": "Great", "lateGame": "Great", "coreItems": ["Runic Claymore", "Hunter's Journal", "Karst"] },
+      { "name": "Ammo Build", "tier": "A", "earlyGame": "Great", "lateGame": "Above Average", "coreItems": ["Hunting Rifle", "Bear Trap", "Chains"] },
+      { "name": "Giant Sling Rage Burst", "tier": "A", "earlyGame": "Good", "lateGame": "Good", "coreItems": ["Giant Sling", "Wolf Mask", "Adrenaline Shot"] }
+    ],
+    "tips": [
+      "Hunting Knife + Hunter's Journal: buy these immediately. They are mandatory every single run.",
+      "Sled + any mask in stash = instant 100 Rage — even without the mask on your board.",
+      "Runic Claymore was buffed from 10% to 15% Max Health damage in Season 14.",
+      "Karnok has no overpowered late-game — plan to win before Day 13.",
+      "Jacket Exodia (Leather Jacket invulnerability) is considered near-broken when fully set up."
+    ],
+    "counters": ["Boards that stall into late-game where Karnok loses steam", "High-regen boards that heal through your burst windows"],
+    "strongAgainst": ["Any board in early-to-mid game", "Slow-scaling heroes before they hit their power spike"],
+    "lore": "Hyper-aggressive hunter who can transform into a savage beast. Released March 2026 as DLC — the newest hero and the least documented on competing sites."
+  }
+]

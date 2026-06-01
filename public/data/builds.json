@@ -1,0 +1,104 @@
+{
+  "season": 14,
+  "patchName": "Monster Mayhem",
+  "patchDate": "2026-05-06",
+  "lastUpdated": "2026-05-20",
+  "tierList": [
+    {
+      "hero": "mak",
+      "builds": [
+        { "name": "Poppy Field Poison", "tier": "A+", "earlyGame": "Below Average", "lateGame": "Fantastic", "coreItems": ["Poppy Field", "Spider Mace", "Floor Spike"], "notes": "Potentially the best single build in the entire game. Poison ignores Shield and stacks freely." },
+        { "name": "Peacewrought", "tier": "A+", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Peacewrought", "Philosopher's Stone"], "notes": "Strong from early with economy support. Library play — buy/transform reagents to grow Philosopher's Stone." },
+        { "name": "Self Poison", "tier": "A", "earlyGame": "Below Average", "lateGame": "Great", "coreItems": ["Rapid Injection System", "Retort"], "notes": "Controlled self-poison fuels Lifesteal and all Poison-on-self triggers." },
+        { "name": "Magic Carpet Crit", "tier": "B+", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Magic Carpet", "Deadly enchantment"], "notes": "RNG-dependent but high ceiling with stacked crit chance." }
+      ]
+    },
+    {
+      "hero": "pygmalien",
+      "builds": [
+        { "name": "Jabalian Drum", "tier": "A+", "earlyGame": "Below Average", "lateGame": "Great", "coreItems": ["Jabalian Drum", "ATM", "Rewards Card"], "notes": "Slow start but compounds into near-unkillable late game. Economy is everything." },
+        { "name": "Fixer Upper", "tier": "A", "earlyGame": "Below Average", "lateGame": "Fantastic", "coreItems": ["ATM", "Money Tree", "Lemonade Stand"], "notes": "Repair/upgrade mechanics create Fantastic late-game scaling." },
+        { "name": "Freeze Build", "tier": "A", "earlyGame": "Poor", "lateGame": "Great", "coreItems": ["Coincure", "Double Whammy"], "notes": "Freeze locks out opponent's key items while you scale freely." },
+        { "name": "Fit Pyg", "tier": "A", "earlyGame": "Below Average", "lateGame": "Good", "coreItems": ["Pyg's Gym", "Matchbox", "Bushel"], "notes": "Physical scaling via Pyg's Gym stacks. Good consistent damage." },
+        { "name": "Charging Items", "tier": "B", "earlyGame": "Good", "lateGame": "Average", "coreItems": ["Yo-Yo", "Matchbox", "Marbles", "Bushel"], "notes": "Strong early with charged items, falls off late." }
+      ]
+    },
+    {
+      "hero": "dooley",
+      "builds": [
+        { "name": "Dooltron (Friends)", "tier": "B+", "earlyGame": "Great", "lateGame": "Average", "coreItems": ["Companion Core", "Dooltron", "Robotic Factory"], "notes": "Best early game of any Dooley build. Dooltron + Companion Core is extremely fast. Falls off vs. hard scaling." },
+        { "name": "Bug Squad", "tier": "B+", "earlyGame": "Good", "lateGame": "Above Average", "coreItems": ["Companion Core", "Robotic Factory", "5× Bug Friends"], "notes": "5 bugs + Robotic Factory Multicast = absurd activation count. Fun and surprisingly effective." },
+        { "name": "Weaponized Core", "tier": "B", "earlyGame": "Great", "lateGame": "Above Average", "coreItems": ["Weaponized Core", "Power Drill", "Arc Blaster"], "notes": "Permanently stacks weapon damage. High ceiling, inconsistent." },
+        { "name": "Ignition Core", "tier": "B-", "earlyGame": "Good", "lateGame": "Below Average", "coreItems": ["Ignition Core", "Arc Blaster"], "notes": "Good early Burn, weak late game as shield scaling reduces Burn effectiveness." }
+      ]
+    },
+    {
+      "hero": "vanessa",
+      "builds": [
+        { "name": "Flagship", "tier": "A", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Flagship", "Tortuga"], "notes": "SEASON 14 BUFF: CD standardized to 5s at all tiers. Potentially reviving into A-tier after being dormant." },
+        { "name": "Aquatic / Poison", "tier": "A", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Pufferfish", "Tortuga", "Scimitar of the Deep"], "notes": "Poison bypasses Shield. Tortuga's board-wide Haste makes the cycle spin fast." },
+        { "name": "Saloon Friends", "tier": "B+", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Saloon", "various Friends"], "notes": "Unique archetype — great late game when fully built." },
+        { "name": "Tortuga Haste", "tier": "B+", "earlyGame": "Average", "lateGame": "Good", "coreItems": ["Tortuga", "fast weapons"], "notes": "Tortuga's board-wide 1s Haste makes fast-CD weapons cycle constantly." },
+        { "name": "Mono-Weapon Sniper", "tier": "B+", "earlyGame": "Good", "lateGame": "Average", "coreItems": ["Sniper Rifle", "Silencer", "Spyglass"], "notes": "All-in on one hyperscaled weapon. Can hit extremely hard but ammo-dependent." },
+        { "name": "Multi-Weapon", "tier": "B", "earlyGame": "Great", "lateGame": "Average", "coreItems": ["Sharkclaws", "Katana", "Arbalest"], "notes": "Strong early pressure, doesn't scale as well as poison builds." }
+      ]
+    },
+    {
+      "hero": "stelle",
+      "builds": [
+        { "name": "Skyliner Stack", "tier": "A", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Skyliner", "Hangar", "Balloon Engine"], "notes": "Most consistent Stelle build. Recommended for beginners. Skyliner Multicast scales with flying item count." },
+        { "name": "LavaRoller Burn", "tier": "A", "earlyGame": "Good", "lateGame": "Great", "coreItems": ["LavaRoller", "Balloon Engine", "Hydrogen Tank"], "notes": "Highest Burn ceiling in the game. LavaRoller self-doubles — late fights become impossible to survive." },
+        { "name": "Haste-Fly Hybrid", "tier": "B+", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Stellear Swallowtail", "Pill Buggy", "Turbo enchantment"], "notes": "Generates free Shield via Pill Buggy from haste triggers. Surprisingly tanky." },
+        { "name": "Fly Cycling", "tier": "B+", "earlyGame": "Average", "lateGame": "Above Average", "coreItems": ["Stellear Swallowtail", "Freefall Simulator"], "notes": "Start/stop cycling creates rapid trigger chains." }
+      ]
+    },
+    {
+      "hero": "jules",
+      "builds": [
+        { "name": "Durian Shield Conversion", "tier": "A+", "earlyGame": "Good", "lateGame": "Fantastic", "coreItems": ["Durian", "Dragonmelon", "Microwave"], "notes": "Stack Shield → Durian converts all of it to damage. Can be set up from Level 3. Very strong." },
+        { "name": "Burn (Anyone Can Cook)", "tier": "A", "earlyGame": "Average", "lateGame": "Great", "coreItems": ["Microwave", "Grill", "Jumbo Wok"], "notes": "Microwave hastens Grill for fast Burn cycling. Board-wide food haste enables rapid stacking." },
+        { "name": "Farmer's Market Regen", "tier": "A", "earlyGame": "Good", "lateGame": "Great", "coreItems": ["Bread Knife", "Microwave", "Feast"], "notes": "Regen → Damage conversion via Bread Knife. Also stacks Max Health." },
+        { "name": "Feast Build", "tier": "A", "earlyGame": "Good", "lateGame": "Great", "coreItems": ["Feast", "Microwave", "Grill"], "notes": "10-0 recorded runs. Feast does everything — damage and healing." }
+      ]
+    },
+    {
+      "hero": "karnok",
+      "builds": [
+        { "name": "Jacket Exodia", "tier": "S", "earlyGame": "Good", "lateGame": "Fantastic", "coreItems": ["Leather Jacket", "Runic Claymore", "Hunting Knife", "Hunter's Journal"], "notes": "Near-invulnerability during Enrage. Considered the strongest Karnok build." },
+        { "name": "Runic Claymore", "tier": "S", "earlyGame": "Great", "lateGame": "Great", "coreItems": ["Runic Claymore", "Hunter's Journal", "Karst"], "notes": "SEASON 14 BUFF: 15% Max Health damage. Most flexible and consistent Karnok build." },
+        { "name": "Ammo Build", "tier": "A", "earlyGame": "Great", "lateGame": "Above Average", "coreItems": ["Hunting Rifle", "Bear Trap", "Chains"], "notes": "Chains Slows + Hunting Rifle burst. Strong early tempo." },
+        { "name": "Giant Sling Rage Burst", "tier": "A", "earlyGame": "Good", "lateGame": "Good", "coreItems": ["Giant Sling", "Wolf Mask", "Adrenaline Shot"], "notes": "Burst all Enrage window damage into Giant Sling activations." },
+        { "name": "Max HP Burst", "tier": "A", "earlyGame": "Good", "lateGame": "Good", "coreItems": ["Forest Cloak", "Runic Claymore"], "notes": "Stack Max Health for Runic Claymore. One-shot potential while using HP as a tank." }
+      ]
+    }
+  ],
+  "season14Changes": {
+    "buffs": [
+      { "item": "Flagship", "hero": "vanessa", "change": "CD standardized to 5s at all tiers (was 7/6/5). Damage significantly increased." },
+      { "item": "Runic Claymore", "hero": "karnok", "change": "Damage increased from 10% to 15% of own Max Health." },
+      { "item": "Slumbering Primordial", "hero": "vanessa", "change": "Now always Charges 2s; improved Gold-tier performance." },
+      { "item": "Bandoleer", "hero": "karnok", "change": "Rage gain increased to 10/15/20." },
+      { "item": "Birthday Cake", "hero": "jules", "change": "Crit chance increased to 30% (was 20%)." },
+      { "item": "Hangar", "hero": "stelle", "change": "Now grants base +10 Damage and +10 Shield to all items regardless of flight." },
+      { "item": "Hunting Rifle", "hero": "karnok", "change": "Now has 2 Ammo charges." },
+      { "item": "Waystones", "hero": "karnok", "change": "CD reduced to 5/4/3/2s." }
+    ],
+    "nerfs": [
+      { "item": "Dragonmelon", "hero": "jules", "change": "Elevated to Gold tier. Shield scaling capped at 25% (was uncapped)." },
+      { "item": "The Boulder", "hero": "vanessa", "change": "CD increased to 22/18s." },
+      { "item": "Trapvine", "hero": "karnok", "change": "Poison reduced to 8/16." }
+    ],
+    "newItems": [
+      "The Boss", "Championship Belt", "Coupon", "Crimson Orchid", "Fairy Statue",
+      "Foundation Robe", "Gorgon Spore", "Infernal Catapult", "Lag-Bolt", "Penthouse",
+      "Portable Stove", "Raffle Ticket", "Rimestone Amulet", "Shell Necklace",
+      "Skill Voucher", "Spark Plug", "Starfish", "Stress Ball", "Tracer Pistol"
+    ],
+    "newMonsters": [
+      { "name": "Happy Camper", "tier": "silver" },
+      { "name": "Calico", "tier": "gold" },
+      { "name": "Castaway Corsair", "tier": "diamond" },
+      { "name": "Mad Diver", "tier": "diamond" }
+    ]
+  }
+}

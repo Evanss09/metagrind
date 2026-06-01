@@ -1,0 +1,252 @@
+[
+  {
+    "id": "burn",
+    "name": "Burn",
+    "targets": "Players",
+    "category": "damage",
+    "color": "#ef4444",
+    "description": "Deals damage twice per second. Each tick the value decreases by 1 (decaying). A Burn of 10 deals 10+9+8...+1 = 55 total damage.",
+    "formula": "Total damage = N × (N+1) / 2",
+    "interactions": [
+      "Shield reduces Burn damage by 50%",
+      "Heal removes 1 Burn per heal trigger",
+      "Does NOT stack additively — multiple Burns add their totals separately",
+      "Fiery enchantment applies Burn equal to 10% of the item's damage"
+    ],
+    "appliedBy": ["Matchbox", "Grill", "Microwave", "LavaRoller", "Ignition Core", "Calcinator", "Fiery enchantment"],
+    "counters": ["Shield (50% reduction)", "Heal (removes Burn per trigger)", "High regen"],
+    "edgeCase": "Burn and Poison apply simultaneously — a board with both can bypass both Shield and healing defenses."
+  },
+  {
+    "id": "poison",
+    "name": "Poison",
+    "targets": "Players",
+    "category": "damage",
+    "color": "#22c55e",
+    "description": "Deals a fixed amount of damage every second. Does NOT decay — each tick deals the full Poison value.",
+    "formula": "Total damage = N × seconds",
+    "interactions": [
+      "Completely bypasses Shield — Poison is unblockable",
+      "Countered ONLY by Regeneration or Healing",
+      "Heal removes 1 Poison per heal trigger",
+      "Toxic enchantment applies Poison equal to 10% of the item's damage"
+    ],
+    "appliedBy": ["Pufferfish", "Floor Spike", "Spider Mace", "Poppy Field", "Retort", "Trapvine", "Toxic enchantment"],
+    "counters": ["Regen (counteracts tick-by-tick)", "Heal (removes Poison per trigger)"],
+    "edgeCase": "Unlike Burn, Poison bypasses Shield entirely. A 50 Poison player takes 50 damage per second regardless of how much shield they have."
+  },
+  {
+    "id": "freeze",
+    "name": "Freeze",
+    "targets": "Items",
+    "category": "control",
+    "color": "#93c5fd",
+    "description": "Stops an item's cooldown from advancing for the duration. The frozen item cannot activate while frozen.",
+    "interactions": [
+      "Flying items have Freeze duration halved",
+      "Radiant enchantment makes an item immune to Freeze",
+      "Icy enchantment applies Freeze for 1 second",
+      "Dooley's chain-trigger items are completely shut down while frozen",
+      "Freezing an enemy's high-damage item can decide fights"
+    ],
+    "appliedBy": ["Isochoric Freezer", "Icy enchantment", "Double Whammy", "Coincure"],
+    "counters": ["Radiant enchantment (complete immunity)", "Flying (halved duration)"],
+    "edgeCase": "Freezing Dooley's Core breaks his entire trigger chain. This is the single best counter to Dooley builds."
+  },
+  {
+    "id": "haste",
+    "name": "Haste",
+    "targets": "Items",
+    "category": "speed",
+    "color": "#fbbf24",
+    "description": "The targeted item charges at double the normal rate for the duration. Duration-based.",
+    "interactions": [
+      "Turbo enchantment applies Haste to 2 items for 2 seconds",
+      "Stellear Swallowtail charges when any item gains Haste",
+      "Pill Buggy (Stelle) gains Shield when items gain Haste",
+      "Haste enables fast-cycling boards — key to exponential damage",
+      "Tortuga (Vanessa) gives 1s Haste to ALL items on board"
+    ],
+    "appliedBy": ["Tortuga", "Metronome", "Turbo enchantment", "Companion Core", "Microwave"],
+    "counters": ["Slow (directly opposed effect)"],
+    "edgeCase": "Haste and Slow cannot coexist — Haste overrides Slow and vice versa based on which applied last."
+  },
+  {
+    "id": "slow",
+    "name": "Slow",
+    "targets": "Items",
+    "category": "control",
+    "color": "#6b7280",
+    "description": "The targeted item charges at half the normal rate for the duration.",
+    "interactions": [
+      "Flying items have Slow duration halved",
+      "Heavy enchantment applies Slow for 1 second to 2 items",
+      "Chains (Karnok) applies Slow",
+      "Can disable key items that require fast cycling",
+      "Boa Constrictor (Karnok) scales damage based on Slow applied"
+    ],
+    "appliedBy": ["Chains", "Heavy enchantment", "Amber", "Log Trap"],
+    "counters": ["Haste overrides Slow", "Flying (halved duration)", "Radiant enchantment (immunity)"],
+    "edgeCase": "Slowing an opponent's lowest-cooldown item (their 'engine' item) can delay their entire combo chain significantly."
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "targets": "Players",
+    "category": "defense",
+    "color": "#6366f1",
+    "description": "Absorbs incoming damage. Reduces Burn damage by 50%. Does NOT block Poison.",
+    "interactions": [
+      "Shielded enchantment applies Shield on item activation",
+      "Durian (Jules) converts current Shield amount into Damage",
+      "Pyg's Gym and ATM generate Shield",
+      "Armored Core (Dooley) grants Shield on left-item activation",
+      "Shield completely blocks physical damage and reduces Burn, but is useless vs Poison"
+    ],
+    "appliedBy": ["ATM", "Armored Core", "Karst", "Security Drone", "Shielded enchantment", "Robe"],
+    "counters": ["Poison (completely bypasses Shield)", "Durian converts shield into damage against you if opponent has Durian"],
+    "edgeCase": "Durian (Jules) turns YOUR high Shield value into damage against you. Fighting a Durian Jules board — don't let your shield stack too high."
+  },
+  {
+    "id": "regen",
+    "name": "Regen",
+    "targets": "Players",
+    "category": "defense",
+    "color": "#10b981",
+    "description": "Restores a fixed HP amount per second. Counters Poison tick-for-tick.",
+    "interactions": [
+      "Counters Poison — each Regen tick reduces effective Poison damage",
+      "Bread Knife (Jules) converts Regen stacks into Damage",
+      "Philosopher's Stone (Mak) gains permanent +Regen each time a Reagent is transformed",
+      "Restorative enchantment applies Heal (not Regen) on activation",
+      "Staff of the Moose applies Regen + scales damage off health thresholds"
+    ],
+    "appliedBy": ["Staff of the Moose", "Philosopher's Stone", "Rapid Injection System", "Restorative enchantment"],
+    "counters": ["Burn (removes 1 Burn but doesn't reduce damage already applied)", "Very high Poison can outpace Regen"],
+    "edgeCase": "Regen and Heal are different: Regen is per-second flat restoration; Heal restores to maximum HP and removes status effects."
+  },
+  {
+    "id": "heal",
+    "name": "Heal",
+    "targets": "Players",
+    "category": "defense",
+    "color": "#34d399",
+    "description": "Restores HP to maximum. Removes 1 Poison AND 1 Burn per trigger.",
+    "interactions": [
+      "Removes 1 Poison per trigger (unlike Regen which counteracts per second)",
+      "Removes 1 Burn per trigger",
+      "Triggers skill effects with 'when you Heal' conditions",
+      "Lifesteal does NOT count as Healing for skill trigger purposes — critical edge case",
+      "Restorative enchantment applies Heal on item activation"
+    ],
+    "appliedBy": ["Feast", "Restorative enchantment", "Gingerbread House", "various food items"],
+    "counters": ["Multiple simultaneous Poison/Burn stacks overwhelm single heal triggers"],
+    "edgeCase": "IMPORTANT: Lifesteal does NOT count as Healing. If your skill says 'when you Heal, do X' — Lifesteal will NOT proc it. This changes many Mak skill combo calculations."
+  },
+  {
+    "id": "charge",
+    "name": "Charge",
+    "targets": "Items",
+    "category": "speed",
+    "color": "#a78bfa",
+    "description": "Instantly advances an item's cooldown by X seconds, making it available to fire faster.",
+    "interactions": [
+      "The Core (Dooley) charges all items to the right by 1 second",
+      "Haste speeds up charging rate; Charge skips ahead instantly",
+      "Crucial for activating high-value large items earlier",
+      "Turbo enchantment applies Haste (not Charge) — different mechanic"
+    ],
+    "appliedBy": ["The Core", "Arc Blaster", "Duct Tape", "Chris Army Knife interactions"],
+    "counters": ["Freeze stops charged items from advancing further"],
+    "edgeCase": "Charge bypasses the cooldown timer entirely for that amount — a 2-second Charge on a 4-second CD item makes it fire at the 2-second mark instead."
+  },
+  {
+    "id": "multicast",
+    "name": "Multicast",
+    "targets": "Items",
+    "category": "offense",
+    "color": "#f59e0b",
+    "description": "The item activates multiple times per use. Each activation from Multicast counts as a SEPARATE item use.",
+    "interactions": [
+      "Each Multicast counts as a separate item use — affects ALL 'when you use this item' triggers",
+      "Robotic Factory (Dooley) gives all Friend items Multicast",
+      "Shiny enchantment adds +1 Multicast",
+      "Multicast on Core items multiplies chain-trigger effects",
+      "Throwing Knives and Yoyo appear to have no internal cooldown — Multicast freely"
+    ],
+    "appliedBy": ["Shiny enchantment", "Robotic Factory", "various skills"],
+    "counters": ["Freeze stops multicasting items mid-activation"],
+    "edgeCase": "Multicast and trigger-on-use items create exponential scaling. A 3× Multicast item with 'when used, charge right neighbor 1s' charges that neighbor 3× per activation."
+  },
+  {
+    "id": "lifesteal",
+    "name": "Lifesteal",
+    "targets": "Players",
+    "category": "defense",
+    "color": "#be123c",
+    "description": "Regains HP proportional to damage dealt.",
+    "interactions": [
+      "Does NOT count as Healing for skill trigger purposes",
+      "Does NOT remove Poison or Burn like Heal does",
+      "Mak has more Lifesteal access than any other hero",
+      "Rapid Injection System (Mak) features Lifesteal + self-poison"
+    ],
+    "appliedBy": ["Rapid Injection System", "various Mak items and skills"],
+    "counters": ["Deals no HP recovery against Poison damage"],
+    "edgeCase": "The most misunderstood keyword. 'Lifesteal does NOT count as Healing' — this is critical for skill builds. Any skill that procs on Heal will not fire from Lifesteal."
+  },
+  {
+    "id": "flying",
+    "name": "Flying",
+    "targets": "Items",
+    "category": "property",
+    "color": "#7dd3fc",
+    "description": "Item has the Flying property. Slow and Freeze durations applied to Flying items are halved.",
+    "interactions": [
+      "Slow duration halved on flying items",
+      "Freeze duration halved on flying items",
+      "Skyliner gains +1 Multicast per flying item on board",
+      "Hangar grants +10 Damage and +10 Shield to all items (flying or not)",
+      "Two trigger states: 'Start Flying' and 'Stop Flying' create a cycling loop for Stelle"
+    ],
+    "appliedBy": ["Stelle-specific items (Skyliner, Balloon Engine, etc.)", "some neutral items"],
+    "counters": ["Freeze still applies at half duration", "Boards that ignore flying triggers"],
+    "edgeCase": "Start Flying ≠ Stop Flying. Building only start-triggers or only stop-triggers halves your potential. True cycling requires both."
+  },
+  {
+    "id": "ammo",
+    "name": "Ammo",
+    "targets": "Items",
+    "category": "resource",
+    "color": "#d97706",
+    "description": "A limited-use counter on weapons. When depleted, the item stops charging. Fully refills after each fight.",
+    "interactions": [
+      "Ammo depletes with each activation, then the item goes dormant",
+      "Reload items (and reload skills) replenish ammo mid-fight",
+      "Fully refills between every fight automatically",
+      "Arbalest, Hunting Rifle, and many Vanessa weapons use Ammo",
+      "Karnok's Hunting Rifle has 2 Ammo charges post-Season 14 buff"
+    ],
+    "appliedBy": ["Arbalest", "Hunting Rifle", "Shotgun", "various potions (Mak)"],
+    "counters": ["Running out of ammo mid-fight is a hard counter to ammo-dependent builds"],
+    "edgeCase": "In very long fights (vs. high-HP boards), ammo depletion can effectively disable your best weapon. Carry reload items or avoid full ammo-dependency on slow boards."
+  },
+  {
+    "id": "crit",
+    "name": "Crit Chance",
+    "targets": "Items",
+    "category": "offense",
+    "color": "#fcd34d",
+    "description": "Percentage chance to double ALL effects of an item activation simultaneously — damage, poison, heal, regen, shield, AND burn.",
+    "interactions": [
+      "Crit doubles ALL effects at once, not just damage",
+      "Deadly enchantment adds +50% Crit Chance",
+      "Critical Core (Dooley) increases crit chance for itself and items to the right",
+      "Magic Carpet (Mak) scales damage on crits",
+      "Birthday Cake (Jules) was buffed to 30% Crit Chance in Season 14"
+    ],
+    "appliedBy": ["Deadly enchantment", "Critical Core", "Birthday Cake", "various skills"],
+    "counters": ["Inconsistent — RNG dependent by nature"],
+    "edgeCase": "A crit on a Multicast item doubles EACH multicast activation separately — this compounds exponentially with high-multicast builds."
+  }
+]
