@@ -24,36 +24,6 @@ type Game = {
   badgeColor: string;
 };
 
-const DOTS = Array.from({ length: 38 }, (_, i) => ({
-  id:       i,
-  left:     `${((i * 37 + 11) % 97) + 1}%`,
-  top:      `${((i * 53 + 7)  % 97) + 1}%`,
-  size:     (i % 3 === 0 ? 2 : i % 3 === 1 ? 1.5 : 1),
-  delay:    `${((i * 0.41) % 6).toFixed(2)}s`,
-  duration: `${4 + (i % 6)}s`,
-  opacity:  +(0.08 + (i % 7) * 0.03).toFixed(2),
-}));
-
-function ParticleDots() {
-  return (
-    <>
-      {DOTS.map(d => (
-        <div
-          key={d.id}
-          style={{
-            position: "absolute",
-            left: d.left, top: d.top,
-            width: d.size, height: d.size,
-            borderRadius: "50%",
-            background: "#f59e0b",
-            opacity: d.opacity,
-            animation: `floatDot ${d.duration} ease-in-out ${d.delay} infinite`,
-          }}
-        />
-      ))}
-    </>
-  );
-}
 
 const GAMES: Game[] = [
   {
@@ -346,14 +316,7 @@ function ComingSoonCard() {
 
 export default function HomePage() {
   return (
-    <div style={{ background: "var(--bg-base)", minHeight: "100vh", position: "relative" }}>
-
-      {/* Fixed amber particle layer — behind all content */}
-      <div style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none", overflow: "hidden" }}>
-        <ParticleDots />
-      </div>
-
-      <div style={{ position: "relative", zIndex: 1 }}>
+    <div style={{ background: "var(--bg-base)", minHeight: "100vh" }}>
 
       {/* ── HERO ──────────────────────────────────────────────── */}
       <div style={{
@@ -408,7 +371,6 @@ export default function HomePage() {
           <ComingSoonCard />
         </div>
       </div>
-      </div>{/* end z-index:1 wrapper */}
     </div>
   );
 }
