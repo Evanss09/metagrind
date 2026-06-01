@@ -61,7 +61,7 @@ const GAMES: Game[] = [
     name:   "The Bazaar",
     tag:    "Roguelite · Auto-battler",
     desc:   "Synergy explorer, damage calculators, hero builds, and the only complete Karnok guide online.",
-    bg:     "/images/backgrounds/alleyway.jpg",
+    bg:     "/images/backgrounds/marketplace.jpg",
     card:   "/images/heroes/jules-hq.jpg",
     logo:   undefined,
     accent: "#ec4899",
@@ -208,8 +208,8 @@ function GameCard({ game }: { game: Game }) {
       <div style={{
         position: "absolute", inset: 0, zIndex: 1,
         background: `
-          linear-gradient(to top, rgba(9,9,26,1) 0%, rgba(9,9,26,0.7) 45%, rgba(9,9,26,0.15) 100%),
-          linear-gradient(to right, rgba(9,9,26,0.55) 0%, transparent 60%)
+          linear-gradient(to top, rgba(9,9,26,1) 0%, rgba(9,9,26,0.85) 50%, rgba(9,9,26,0.4) 75%, rgba(9,9,26,0.1) 100%),
+          linear-gradient(to right, rgba(9,9,26,0.7) 0%, rgba(9,9,26,0.2) 55%, transparent 75%)
         `,
       }} />
 
@@ -261,13 +261,13 @@ function GameCard({ game }: { game: Game }) {
           <img src={game.logo} alt={game.name} style={{ height: 48, width: "auto", objectFit: "contain", marginBottom: 8, filter: "drop-shadow(0 2px 12px rgba(0,0,0,0.7))" }} />
         ) : (
           <div style={{
-            fontFamily: "'TheBazaar', serif",
-            fontSize: 46,
-            color: "#f5c842",
-            letterSpacing: "1px",
+            fontSize: 32,
+            fontWeight: 900,
+            color: "#ffffff",
+            letterSpacing: "-0.5px",
             marginBottom: 8,
-            lineHeight: 1,
-            textShadow: "0 0 28px rgba(245,158,11,0.5), 0 2px 10px rgba(0,0,0,0.9)",
+            lineHeight: 1.05,
+            textShadow: "0 2px 12px rgba(0,0,0,0.9)",
           }}>
             {game.name}
           </div>
