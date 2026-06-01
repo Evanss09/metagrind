@@ -316,7 +316,7 @@ function ComingSoonCard() {
 
 export default function HomePage() {
   return (
-    <div style={{ background: "var(--bg-base)", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
 
       {/* ── HERO ──────────────────────────────────────────────── */}
       <div style={{
