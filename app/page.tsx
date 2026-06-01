@@ -16,7 +16,7 @@ type Game = {
   tag: string;
   desc: string;
   bg: string;
-  card: string;
+  card?: string;
   logo?: string;
   accent: string;
   tools: Tool[];
@@ -62,7 +62,7 @@ const GAMES: Game[] = [
     tag:    "Roguelite · Auto-battler",
     desc:   "Synergy explorer, damage calculators, hero builds, and the only complete Karnok guide online.",
     bg:     "/images/backgrounds/marketplace.jpg",
-    card:   "/images/heroes/jules-hq.jpg",
+    card:   undefined,
     logo:   undefined,
     accent: "#ec4899",
     tools: [
@@ -220,25 +220,27 @@ function GameCard({ game }: { game: Game }) {
         transition: "background 0.4s",
       }} />
 
-      {/* Character art */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={game.card}
-        alt=""
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          right: "6%", bottom: 0,
-          height: "72%", width: "auto",
-          objectFit: "contain", objectPosition: "bottom center",
-          zIndex: 2,
-          transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1), filter 0.3s",
-          transform: hovered ? "translateY(-8px) scale(1.04)" : "none",
-          filter: hovered
-            ? `drop-shadow(0 0 32px ${game.accent}55)`
-            : `drop-shadow(0 0 12px ${game.accent}25)`,
-        }}
-      />
+      {/* Character art — only shown when a card image is provided */}
+      {game.card && (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src={game.card}
+          alt=""
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            right: "6%", bottom: 0,
+            height: "72%", width: "auto",
+            objectFit: "contain", objectPosition: "bottom center",
+            zIndex: 2,
+            transition: "transform 0.5s cubic-bezier(0.22,1,0.36,1), filter 0.3s",
+            transform: hovered ? "translateY(-8px) scale(1.04)" : "none",
+            filter: hovered
+              ? `drop-shadow(0 0 32px ${game.accent}55)`
+              : `drop-shadow(0 0 12px ${game.accent}25)`,
+          }}
+        />
+      )}
 
       {/* Content */}
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "24px 24px 24px", zIndex: 3 }}>
