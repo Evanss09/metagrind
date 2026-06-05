@@ -25,7 +25,8 @@ const HERO_COLORS: Record<string, string> = {
 
 const TOOLS = [
   { href: "/the-bazaar/calculators", title: "Damage Calculators", desc: "Burn decay, Poison DPS vs. regen, Max HP scaling for Anchor/Runic/Skyscraper, and Durian conversion.", badge: "4 Formulas", color: "#3b82f6" },
-  { href: "/the-bazaar/tier-list",   title: "Season 14 Tier List", desc: "Full meta rankings with the complete S14 buff/nerf log and all 19 new neutral items.", badge: "S14 Current", color: "#10b981" },
+  { href: "/the-bazaar/tier-list",   title: "Season 15 Tier List", desc: "Full meta rankings with the complete S15 buff/nerf log. Anaconda nerfed, Shield Generator top meta.", badge: "S15 Current", color: "#10b981" },
+  { href: "/the-bazaar/patch-notes", title: "Patch Notes", desc: "Every balance change, hotfix, and new content drop. Season 15 + Hot Fix 15.1 live.", badge: "S15 Live", color: "#a855f7" },
   { href: "/the-bazaar/heroes",      title: "Hero Comparison",    desc: "All 7 heroes side by side — difficulty, damage type, DLC cost, and unique mechanic.", badge: "All 7", color: "#8b5cf6" },
   { href: "/the-bazaar/heroes/karnok", title: "Karnok Deep Dive", desc: "Newest DLC hero (March 2026) — complete Rage system, Jacket Exodia, and the Sled + Mask secret.", badge: "First Mover", color: "#dc2626" },
   { href: "/the-bazaar/glossary",    title: "Keyword Glossary",  desc: "Every keyword with edge cases that cost fights. Lifesteal ≠ Healing. Fully searchable.", badge: "14 Keywords", color: "#6366f1" },
@@ -374,7 +375,7 @@ export default function Home() {
                 animation: "dotPulse 2s ease-in-out infinite",
                 display: "inline-block",
               }} />
-              Season 14 · Monster Mayhem
+              Season 15
             </div>
 
             <h1 style={{
@@ -458,7 +459,7 @@ export default function Home() {
               {[
                 { val: "7", label: "Heroes" },
                 { val: "6+", label: "Tools" },
-                { val: "S14", label: "Season" },
+                { val: "S15", label: "Season" },
                 { val: "0", label: "Competing sites" },
               ].map(s => (
                 <div key={s.label}>

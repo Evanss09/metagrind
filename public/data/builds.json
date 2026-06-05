@@ -1,8 +1,8 @@
 {
-  "season": 14,
-  "patchName": "Monster Mayhem",
-  "patchDate": "2026-05-06",
-  "lastUpdated": "2026-05-20",
+  "season": 15,
+  "patchName": "Season 15",
+  "patchDate": "2026-06-04",
+  "lastUpdated": "2026-06-04",
   "tierList": [
     {
       "hero": "mak",
@@ -72,28 +72,26 @@
       ]
     }
   ],
-  "season14Changes": {
+  "season15Changes": {
     "buffs": [
-      { "item": "Flagship", "hero": "vanessa", "change": "CD standardized to 5s at all tiers (was 7/6/5). Damage significantly increased." },
-      { "item": "Runic Claymore", "hero": "karnok", "change": "Damage increased from 10% to 15% of own Max Health." },
-      { "item": "Slumbering Primordial", "hero": "vanessa", "change": "Now always Charges 2s; improved Gold-tier performance." },
-      { "item": "Bandoleer", "hero": "karnok", "change": "Rage gain increased to 10/15/20." },
-      { "item": "Birthday Cake", "hero": "jules", "change": "Crit chance increased to 30% (was 20%)." },
-      { "item": "Hangar", "hero": "stelle", "change": "Now grants base +10 Damage and +10 Shield to all items regardless of flight." },
-      { "item": "Hunting Rifle", "hero": "karnok", "change": "Now has 2 Ammo charges." },
-      { "item": "Waystones", "hero": "karnok", "change": "CD reduced to 5/4/3/2s." }
+      { "item": "Flagship", "hero": "vanessa", "change": "CD standardized to 5s at all tiers (was 7/6/5). Damage significantly increased. (Carried from S14)" },
+      { "item": "Runic Claymore", "hero": "karnok", "change": "Damage increased from 10% to 15% of own Max Health. (Carried from S14)" },
+      { "item": "Slumbering Primordial", "hero": "vanessa", "change": "Now always Charges 2s; improved Gold-tier performance. (Carried from S14)" },
+      { "item": "Bandoleer", "hero": "karnok", "change": "Rage gain increased to 10/15/20. (Carried from S14)" },
+      { "item": "Birthday Cake", "hero": "jules", "change": "Crit chance increased to 30% (was 20%). (Carried from S14)" },
+      { "item": "Hangar", "hero": "stelle", "change": "Now grants base +10 Damage and +10 Shield to all items regardless of flight. (Carried from S14)" },
+      { "item": "Hunting Rifle", "hero": "karnok", "change": "Now has 2 Ammo charges. (Carried from S14)" },
+      { "item": "Waystones", "hero": "karnok", "change": "CD reduced to 5/4/3/2s. (Carried from S14)" },
+      { "item": "Shield Generator", "hero": "karnok", "change": "S15 meta standout — strong Start of Combat synergy with Karnok builds after Patch 15.0." }
     ],
     "nerfs": [
-      { "item": "Dragonmelon", "hero": "jules", "change": "Elevated to Gold tier. Shield scaling capped at 25% (was uncapped)." },
-      { "item": "The Boulder", "hero": "vanessa", "change": "CD increased to 22/18s." },
-      { "item": "Trapvine", "hero": "karnok", "change": "Poison reduced to 8/16." }
+      { "item": "Dragonmelon", "hero": "jules", "change": "Elevated to Gold tier. Shield scaling capped at 25% (was uncapped). (Carried from S14)" },
+      { "item": "The Boulder", "hero": "vanessa", "change": "CD increased to 22/18s. (Carried from S14)" },
+      { "item": "Trapvine", "hero": "karnok", "change": "Poison reduced to 8/16. (Carried from S14)" },
+      { "item": "Anaconda", "hero": "neutral", "change": "Cooldown increased — was enabling infinite damage loops; nerf confirmed by community testing in Patch 15." },
+      { "item": "Freeze (interactions)", "hero": "neutral", "change": "Hot Fix 15.1: Several infinite-freeze combinations patched. Items triggering unlimited freeze chains nerfed." }
     ],
-    "newItems": [
-      "The Boss", "Championship Belt", "Coupon", "Crimson Orchid", "Fairy Statue",
-      "Foundation Robe", "Gorgon Spore", "Infernal Catapult", "Lag-Bolt", "Penthouse",
-      "Portable Stove", "Raffle Ticket", "Rimestone Amulet", "Shell Necklace",
-      "Skill Voucher", "Spark Plug", "Starfish", "Stress Ball", "Tracer Pistol"
-    ],
+    "newItems": [],
     "newMonsters": [
       { "name": "Happy Camper", "tier": "silver" },
       { "name": "Calico", "tier": "gold" },

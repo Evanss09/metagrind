@@ -10,11 +10,12 @@ export const metadata: Metadata = {
 };
 
 const NAV = [
-  { href: "/the-bazaar/synergy",     label: "Synergy" },
-  { href: "/the-bazaar/calculators", label: "Calculators" },
-  { href: "/the-bazaar/tier-list",   label: "Tier List" },
-  { href: "/the-bazaar/heroes",      label: "Heroes" },
-  { href: "/the-bazaar/glossary",    label: "Glossary" },
+  { href: "/the-bazaar/synergy",      label: "Synergy" },
+  { href: "/the-bazaar/calculators",  label: "Calculators" },
+  { href: "/the-bazaar/tier-list",    label: "Tier List" },
+  { href: "/the-bazaar/patch-notes",  label: "Patch Notes" },
+  { href: "/the-bazaar/heroes",       label: "Heroes" },
+  { href: "/the-bazaar/glossary",     label: "Glossary" },
 ];
 
 export default function BazaarLayout({ children }: { children: React.ReactNode }) {
@@ -56,7 +57,7 @@ export default function BazaarLayout({ children }: { children: React.ReactNode }
               border: "1px solid rgba(245,158,11,0.2)",
               padding: "4px 8px", borderRadius: 4, whiteSpace: "nowrap",
             }}>
-              S14
+              S15
             </div>
           </nav>
         </div>

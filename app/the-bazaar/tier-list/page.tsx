@@ -46,7 +46,7 @@ function GameBadge({ label, value, color }: { label: string; value: string; colo
 }
 
 export default function TierListPage() {
-  const { tierList, season14Changes, season, patchName, lastUpdated } = buildsData;
+  const { tierList, season15Changes, season, patchName, lastUpdated } = buildsData;
 
   return (
     <div>
@@ -56,7 +56,7 @@ export default function TierListPage() {
           Season {season} · {patchName}
         </div>
         <h1 style={{ fontSize: 32, fontWeight: 900, color: "#e2e4f0", margin: "0 0 10px", letterSpacing: "-1px" }}>
-          Season 14 Tier List
+          Season 15 Tier List
         </h1>
         <p style={{ fontSize: 14, color: "#6b7280", margin: 0 }}>
           Every hero, every viable build, ranked for the current meta. Updated {lastUpdated}.
@@ -136,17 +136,17 @@ export default function TierListPage() {
         })}
       </div>
 
-      {/* Season 14 changes */}
+      {/* Season 15 changes */}
       <div style={{ marginTop: 40 }}>
-        <h2 style={{ fontSize: 20, fontWeight: 800, color: "#e2e4f0", marginBottom: 6 }}>Season 14 Balance Changes</h2>
-        <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 24 }}>Patch: {patchName} · {season14Changes.newItems.length} new neutral items added</p>
+        <h2 style={{ fontSize: 20, fontWeight: 800, color: "#e2e4f0", marginBottom: 6 }}>Season 15 Balance Changes</h2>
+        <p style={{ fontSize: 13, color: "#6b7280", marginBottom: 24 }}>Patch: {patchName} · {season15Changes.newItems.length} new neutral items added</p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 24 }}>
           <div style={{ background: "#0d1f14", border: "1px solid #15803d40", borderRadius: 12, padding: "20px" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#22c55e", marginBottom: 14 }}>
-              Buffs ({season14Changes.buffs.length})
+              Buffs ({season15Changes.buffs.length})
             </div>
-            {season14Changes.buffs.map((b) => (
+            {season15Changes.buffs.map((b) => (
               <div key={b.item} style={{ marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid #15803d20" }}>
                 <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 4 }}>
                   <span style={{ fontSize: 13, fontWeight: 700, color: "#e2e4f0" }}>{b.item}</span>
@@ -159,9 +159,9 @@ export default function TierListPage() {
 
           <div style={{ background: "#1f0d0d", border: "1px solid #dc262640", borderRadius: 12, padding: "20px" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#ef4444", marginBottom: 14 }}>
-              Nerfs ({season14Changes.nerfs.length})
+              Nerfs ({season15Changes.nerfs.length})
             </div>
-            {season14Changes.nerfs.map((n) => (
+            {season15Changes.nerfs.map((n) => (
               <div key={n.item} style={{ marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid #dc262620" }}>
                 <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 4 }}>
                   <span style={{ fontSize: 13, fontWeight: 700, color: "#e2e4f0" }}>{n.item}</span>
@@ -175,10 +175,10 @@ export default function TierListPage() {
 
         <div style={{ background: "#111218", border: "1px solid #1e2236", borderRadius: 12, padding: "20px" }}>
           <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#f59e0b", marginBottom: 14 }}>
-            New Neutral Items ({season14Changes.newItems.length})
+            New Neutral Items ({season15Changes.newItems.length})
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-            {season14Changes.newItems.map((item) => (
+            {season15Changes.newItems.map((item) => (
               <span key={item} style={{
                 fontSize: 12, fontWeight: 600, color: "#9ca3af",
                 background: "#1e2236", border: "1px solid #262840",
@@ -189,7 +189,7 @@ export default function TierListPage() {
             ))}
           </div>
           <p style={{ fontSize: 12, color: "#4b5563", margin: "14px 0 0", lineHeight: 1.6 }}>
-            These items are available to all heroes. The community is still fully analyzing their synergy potential. Championship Belt, Foundation Robe, Infernal Catapult, and Penthouse are the early standouts.
+            Season 15 new items not yet fully documented. Community analysis ongoing.
           </p>
         </div>
       </div>
