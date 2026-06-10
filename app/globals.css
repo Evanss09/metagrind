@@ -28,9 +28,14 @@ html { scroll-behavior: smooth; }
 body {
   background-color: var(--bg-base);
   color: var(--text-primary);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-outfit), system-ui, -apple-system, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+/* Esports-tech display face for wordmarks & big headings */
+.mg-display {
+  font-family: var(--font-oxanium), var(--font-outfit), system-ui, sans-serif;
 }
 
 ::selection { background: rgba(245, 158, 11, 0.3); }
@@ -69,6 +74,45 @@ body {
 @keyframes dotPulse {
   0%, 100% { transform: scale(1); opacity: 0.7; }
   50%       { transform: scale(1.4); opacity: 1; }
+}
+@keyframes auroraDrift {
+  0%   { transform: translate3d(-6%, -2%, 0) rotate(0deg); }
+  50%  { transform: translate3d(6%, 4%, 0) rotate(8deg); }
+  100% { transform: translate3d(-6%, -2%, 0) rotate(0deg); }
+}
+@keyframes scanSweep {
+  0%   { transform: translateY(-120%); opacity: 0; }
+  12%  { opacity: 0.6; }
+  88%  { opacity: 0.6; }
+  100% { transform: translateY(820%); opacity: 0; }
+}
+
+/* ── Hero atmosphere ────────────────────────── */
+/* Faint engineering grid, radially masked so it fades to nothing at the edges */
+.grid-fade {
+  background-image:
+    linear-gradient(rgba(245,158,11,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,158,11,0.05) 1px, transparent 1px);
+  background-size: 46px 46px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 42%, #000 0%, transparent 78%);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 42%, #000 0%, transparent 78%);
+}
+/* Slow drifting amber/violet aurora blobs for depth behind the wordmark */
+.aurora {
+  background:
+    radial-gradient(42% 42% at 30% 40%, rgba(245,158,11,0.16), transparent 55%),
+    radial-gradient(40% 40% at 72% 55%, rgba(139,92,246,0.12), transparent 60%);
+  filter: blur(36px);
+  animation: auroraDrift 18s ease-in-out infinite;
+}
+/* A single thin light bar that sweeps the hero once-ish */
+.scan-sweep {
+  background: linear-gradient(to bottom, transparent, rgba(245,158,11,0.5), transparent);
+  animation: scanSweep 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora, .scan-sweep, .text-shimmer, .glow-border { animation: none; }
 }
 /* Light mode */
 html:not(.dark) {

@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
+import { Outfit, Oxanium } from "next/font/google";
 import Link from "next/link";
 import { GameLink } from "./components/GameLink";
 import DotBackground from "./components/ui/dot-background";
 import ThemeToggle from "./components/ThemeToggle";
 import "./globals.css";
+
+// Outfit — clean geometric workhorse for body + dense tool UI
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// Oxanium — esports-tech display face for wordmarks & big headings
+const oxanium = Oxanium({
+  variable: "--font-oxanium",
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "MetaGrind — Interactive Tools for Hardcore Gamers",
@@ -14,15 +30,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={`dark ${outfit.variable} ${oxanium.variable}`}>
       <head>
         {/* Apply saved theme before first paint to avoid flash */}
         <script dangerouslySetInnerHTML={{ __html: `try{var t=localStorage.getItem('theme');document.documentElement.classList.toggle('dark',t!=='light');}catch(e){document.documentElement.classList.add('dark');}` }} />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body>
         <DotBackground />
@@ -63,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 }}>
                   ⚡
                 </div>
-                <span style={{ fontSize: 15, fontWeight: 900, letterSpacing: "-0.5px" }}>
+                <span className="mg-display" style={{ fontSize: 17, fontWeight: 800, letterSpacing: "0.5px" }}>
                   <span style={{ color: "#e2e4f0" }}>Meta</span>
                   <span style={{ color: "#f59e0b" }}>Grind</span>
                 </span>

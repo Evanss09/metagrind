@@ -378,22 +378,22 @@ export default function Home() {
               Season 15
             </div>
 
-            <h1 style={{
-              fontSize: "clamp(50px, 6.5vw, 82px)",
-              fontWeight: 900,
-              lineHeight: 0.92,
-              letterSpacing: "-3.5px",
+            <h1 className="mg-display" style={{
+              fontSize: "clamp(50px, 6.5vw, 84px)",
+              fontWeight: 800,
+              lineHeight: 0.9,
+              letterSpacing: "-1.5px",
               color: "#e2e4f0",
-              margin: "0 0 4px",
+              margin: "0 0 2px",
               textShadow: "0 4px 60px rgba(0,0,0,0.9)",
             }}>
               The Bazaar
             </h1>
-            <div className="text-shimmer" style={{
-              fontSize: "clamp(50px, 6.5vw, 82px)",
-              fontWeight: 900,
-              lineHeight: 0.92,
-              letterSpacing: "-3.5px",
+            <div className="text-shimmer mg-display" style={{
+              fontSize: "clamp(50px, 6.5vw, 84px)",
+              fontWeight: 800,
+              lineHeight: 0.9,
+              letterSpacing: "-1.5px",
               display: "block",
               marginBottom: 30,
             }}>
@@ -631,7 +631,7 @@ export default function Home() {
             </div>
             <div style={{ height: 1, flex: 1, background: "linear-gradient(to right, rgba(245,158,11,0.25), transparent)" }} />
           </div>
-          <div className="reveal" style={{ fontSize: 28, fontWeight: 900, color: "#e2e4f0", marginBottom: 36, letterSpacing: "-0.8px" }}>
+          <div className="reveal mg-display" style={{ fontSize: 30, fontWeight: 800, color: "#e2e4f0", marginBottom: 36, letterSpacing: "-0.3px" }}>
             All 7 Heroes
           </div>
 
@@ -700,7 +700,7 @@ export default function Home() {
                       Exclusive Tool
                     </span>
                   </div>
-                  <h3 style={{ fontSize: 26, fontWeight: 900, color: "#e2e4f0", margin: "0 0 12px", letterSpacing: "-0.8px" }}>
+                  <h3 className="mg-display" style={{ fontSize: 27, fontWeight: 800, color: "#e2e4f0", margin: "0 0 12px", letterSpacing: "-0.3px" }}>
                     Item Synergy Explorer
                   </h3>
                   <p style={{ fontSize: 14, color: "#6b7280", lineHeight: 1.75, margin: "0 0 24px", maxWidth: 500 }}>

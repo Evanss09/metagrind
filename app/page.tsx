@@ -232,13 +232,13 @@ function GameCard({ game }: { game: Game }) {
           /* eslint-disable-next-line @next/next/no-img-element */
           <img src={game.logo} alt={game.name} style={{ height: 48, width: "auto", objectFit: "contain", marginBottom: 8, filter: "drop-shadow(0 2px 12px rgba(0,0,0,0.7))" }} />
         ) : (
-          <div style={{
+          <div className="mg-display" style={{
             fontSize: 32,
-            fontWeight: 900,
+            fontWeight: 800,
             color: "#ffffff",
-            letterSpacing: "-0.5px",
+            letterSpacing: "0px",
             marginBottom: 8,
-            lineHeight: 1.05,
+            lineHeight: 1.02,
             textShadow: "0 2px 12px rgba(0,0,0,0.9)",
           }}>
             {game.name}
@@ -276,38 +276,54 @@ function GameCard({ game }: { game: Game }) {
 }
 
 function ComingSoonCard() {
+  const [hov, setHov] = useState(false);
   return (
-    <div style={{
-      position: "relative",
-      borderRadius: 20,
-      overflow: "hidden",
-      height: 460,
-      border: "1px solid rgba(255,255,255,0.04)",
-      background: "#070818",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-    }}>
+    <div
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{
+        position: "relative",
+        borderRadius: 20,
+        overflow: "hidden",
+        height: 460,
+        border: `1px dashed ${hov ? "rgba(245,158,11,0.4)" : "rgba(255,255,255,0.12)"}`,
+        background: "linear-gradient(160deg, #0c0d1c 0%, #08091400 70%)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        transition: "border-color 0.25s, transform 0.2s",
+        transform: hov ? "translateY(-8px)" : "none",
+      }}
+    >
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)",
+        backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.045) 1px, transparent 1px)",
         backgroundSize: "30px 30px",
+        maskImage: "radial-gradient(ellipse 70% 60% at 50% 45%, #000, transparent 80%)",
+        WebkitMaskImage: "radial-gradient(ellipse 70% 60% at 50% 45%, #000, transparent 80%)",
+      }} />
+      <div style={{
+        position: "absolute", inset: 0, pointerEvents: "none",
+        background: `radial-gradient(ellipse at 50% 35%, rgba(245,158,11,${hov ? "0.10" : "0.05"}) 0%, transparent 60%)`,
+        transition: "background 0.3s",
       }} />
       <div style={{ position: "relative", textAlign: "center", padding: 32 }}>
         <div style={{
           width: 56, height: 56, borderRadius: "50%",
-          border: "1px solid rgba(255,255,255,0.07)",
+          border: `1px solid ${hov ? "rgba(245,158,11,0.5)" : "rgba(255,255,255,0.14)"}`,
           margin: "0 auto 20px",
           display: "flex", alignItems: "center", justifyContent: "center",
-          fontSize: 28, color: "#1e2030",
+          fontSize: 28, fontWeight: 300,
+          color: hov ? "#f59e0b" : "#6b7280",
+          transition: "color 0.25s, border-color 0.25s",
         }}>
           +
         </div>
-        <div style={{ fontSize: 16, fontWeight: 700, color: "#252638", marginBottom: 8 }}>
+        <div className="mg-display" style={{ fontSize: 17, fontWeight: 700, color: "#9aa1b5", marginBottom: 8, letterSpacing: "0.3px" }}>
           Next Game
         </div>
-        <div style={{ fontSize: 12, color: "#1a1c2a", lineHeight: 1.65 }}>
-          New tools added as<br />games are researched
+        <div style={{ fontSize: 12, color: "#5b6273", lineHeight: 1.65 }}>
+          New toolkits added as<br />games are researched
         </div>
       </div>
     </div>
@@ -331,6 +347,12 @@ export default function HomePage() {
             radial-gradient(ellipse at 50% 110%, rgba(139,92,246,0.05) 0%, transparent 50%)
           `,
         }} />
+        {/* Atmospheric layers: drifting aurora + faint tech grid + light sweep */}
+        <div className="aurora" style={{ position: "absolute", inset: "-10% -5%", zIndex: 0, pointerEvents: "none" }} />
+        <div className="grid-fade" style={{ position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none" }} />
+        <div style={{ position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none", overflow: "hidden" }}>
+          <div className="scan-sweep" style={{ position: "absolute", top: 0, left: "12%", right: "12%", height: 80 }} />
+        </div>
         <div style={{ position: "relative", zIndex: 1, maxWidth: 640, margin: "0 auto", padding: "0 24px" }}>
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8,
@@ -342,10 +364,10 @@ export default function HomePage() {
             Interactive Game Tools
           </div>
 
-          <h1 style={{ fontSize: "clamp(44px, 6vw, 72px)", fontWeight: 900, lineHeight: 0.93, letterSpacing: "-3px", margin: "0 0 4px", color: "#e2e4f0" }}>
+          <h1 className="mg-display" style={{ fontSize: "clamp(46px, 6vw, 76px)", fontWeight: 800, lineHeight: 0.9, letterSpacing: "-1px", margin: "0 0 2px", color: "#e2e4f0", textShadow: "0 4px 50px rgba(0,0,0,0.6)" }}>
             Meta
           </h1>
-          <div className="text-shimmer" style={{ fontSize: "clamp(44px, 6vw, 72px)", fontWeight: 900, lineHeight: 0.93, letterSpacing: "-3px", display: "block", marginBottom: 24 }}>
+          <div className="text-shimmer mg-display" style={{ fontSize: "clamp(46px, 6vw, 76px)", fontWeight: 800, lineHeight: 0.9, letterSpacing: "-1px", display: "block", marginBottom: 24 }}>
             Grind
           </div>
 
